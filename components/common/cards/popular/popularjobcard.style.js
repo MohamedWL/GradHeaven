@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.medium,
     fontFamily: FONT.regular,
     color: "#B3AEC6",
-    marginTop: SIZES.small / 1.5,
+    marginBottom: -10,
   },
   infoContainer: {
     marginTop: SIZES.large,
