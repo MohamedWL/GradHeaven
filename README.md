@@ -1,5 +1,6 @@
 # Grad Heaven
 ### An app where newly graduates, students or other individuals with fewer experience can find jobs to kickstart their careers.
+### Scan the QR code following this link https://expo.dev/@mohamedlabz25/ReactNative?serviceType=classic&distribution=expo-go
 
 ## Expo Router Example
 
