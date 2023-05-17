@@ -11,7 +11,7 @@ import { useRouter } from 'expo-router'
 import styles from './welcome.style'
 import { icons, SIZES } from '../../../constants'
 
-const Welcome = () => {
+const Welcome = ({searchWord, setSearchWord, handleClick}) => {
 
   const router = useRouter();
   const jobTypes = ["Full-time", "Part-time", "Internship", "CO-OP", "Summer Jobs", "Volunteering"];
@@ -27,13 +27,13 @@ const Welcome = () => {
         <View style={styles.searchWrapper}>
           <TextInput
             style={styles.searchInput}
-            value=""
-            onChangeText={() => { }}
+            value={searchWord}
+            onChangeText={(text) => { setSearchWord(text) }}
             placeholder='What are you looking for?'
           />
         </View>
 
-        <TouchableOpacity style={styles.searchBtn} onPress={() => { }}>
+        <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
           <Image
             source={icons.search}
             resizeMode='contain'
