@@ -27,11 +27,15 @@ const Home = () => {
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
                         <View style={styles.headerModalView}>
-                            <Text style={styles.modalText}>Hello World!</Text>
+                            <Text style={styles.modalText}>Here is your menu!</Text>
                             <Pressable
                                 style={[styles.button, styles.buttonClose]}
                                 onPress={() => setModalVisible({ modalVisible: true })}>
-                                <Text style={styles.textStyle}>Hide Modal</Text>
+                                <Image
+                                    source={icons.close}
+                                    resizeMode="cover"
+                                    style={{ height: 20, width: 20 }}
+                                />
                             </Pressable>
                         </View>
                         <HomeModal />

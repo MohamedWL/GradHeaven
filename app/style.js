@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORS, SIZES, icons } from "../constants";
+import { COLORS, SIZES, icons, FONT } from "../constants";
 
 const styles = StyleSheet.create({
     centeredView: {
@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     },
     headerModalView: {
         flexDirection: 'row',
-        backgroundColor: 'gray',
         justifyContent: 'space-between',
         width: 325,
         height: 65,
@@ -39,10 +38,10 @@ const styles = StyleSheet.create({
         elevation: 2,
     },
     buttonOpen: {
-        backgroundColor: '#F194FF',
+        backgroundColor: 'lightgray',
     },
     buttonClose: {
-        backgroundColor: '#2196F3',
+        backgroundColor: 'lightgray',
     },
     textStyle: {
         color: 'white',
@@ -52,6 +51,9 @@ const styles = StyleSheet.create({
     modalText: {
         textAlign: 'center',
         verticalAlign: 'middle',
+        marginLeft: 30,
+        fontFamily: "DMMedium",
+        fontSize: 20,
     },
     btnContainer: {
         width: 40,
